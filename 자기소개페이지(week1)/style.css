@@ -1,0 +1,176 @@
+/* nav 코드 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: /* 1번) 원하는 폰트를 지정해주세요. */ 'Roboto', sans-serif;}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    background-color:#ccc0e0;/* 2번) 원하는 컬러를 지정해주세요. */
+    line-height: 80px;
+}
+
+nav::after{
+    content: "";
+    display: black;
+    clear: both;
+}
+
+.nav-logo {
+    font-size: 25px; /* 3번) 폰트 사이즈를 지정해주세요. */
+    float: left;
+    margin: 0;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-btn {
+    list-style-type: none;
+    margin: 0;
+}
+
+ul.nav-btn > li {
+    float: left;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* header 코드 */
+.hd {
+    position: relative;
+    height: 120px;
+    text-align: center;
+}
+
+.hd-title {
+    font-size: 40px;
+    margin-top:0;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.hd-content {
+    font-size: 15px;
+    margin: 0;
+    text-align:center;
+}
+
+
+.hd:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: rgb(224,223,238);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hd .container {
+    position: relative;
+    color: black;
+}
+
+.su {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+/* section 코드 */
+
+.sec {
+    text-align: center;
+    padding: 100px 0;
+    background-color: white/* 4번) 원하는 컬러를 지정해주세요. */
+}
+
+.sec article {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+.sec article:last-child {
+    margin-right: 0;
+}
+
+.sec article img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.card-img {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-style: dotted;
+    border-radius: 30px;
+    border-color: #ccc0e0;
+    /* 5번) 코드를 작성해 사진의 테두리를 만들어주세요. (테두리 대쉬, 컬러 자유, 테두리 원하는 만큼 둥글게) */
+
+}
+
+.sec::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rong {
+    /* 6번) 글자 기울이기, 두껍게, 폰트 사이즈는 25px, 색상은 검정색으로 지정해주세요. */
+    font-size: 25px;
+    font-style: italic;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+.daemun {
+    /* 7번) 글자 두껍게, 폰트 사이즈는 20px로 지정해주세요. */
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
+
+}
+
+.daedap {
+    /* 8번) 글자 얇게, 폰트 사이즈는 15px로 지정해주세요. */
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: left;  
+    margin-top: 0px;
+}
+
+/* footer */
+.ft {
+    padding: 10px;
+    text-align: center;
+    background-color: #ccc0e0;    /* 9번) 원하는 컬러로 지정해주세요. */
+    font-weight: bold;
+    color: white;
+}
